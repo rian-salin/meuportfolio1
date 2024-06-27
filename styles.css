@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0px; /* Adiciona margens superior e inferior */
+    padding: 0;
+    background-color: #010f17;
+    scroll-behavior: smooth;
+}
+
+#cabeçalho{
+    background-color:darkcyan;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+.foto img {
+    width: 100%;
+    height: 50%;
+}
+#ola{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 60px;
+    padding: 10px;
+    gap: 10px;
+    
+}
+#ola p{
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    }
+    .contato{
+   padding: 10px 20px;
+   font-size: 15px;
+   background-color: darkcyan;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 5px;
+   border: none;
+   transition: background-color 0.2s ease;
+    }
+    .contato:hover {
+        background-color: white; 
+    }
+    .sobre{
+    padding: 200px;
+   
+    }
+
+    .sociais{
+        
+        padding: 25px;
+        margin-top: 90px;
+        
+        
+    }
+    
+
+
+    /* CSS HABILIDADES */
+    #habilidades{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+   
+    section.habilidades{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .habilidades-box{
+        color: darkcyan;
+        padding: 100px;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 80px;
+    }
+
+    .flex{
+        display: flex;
+        gap: 60px;
+        padding: 30px;
+    }
+
+    .habilidades-box i{
+        font-size: 90px;
+        color: darkcyan;
+        
+    }
+
+    .habilidades-box h3{
+        font-size: 23px;
+        margin: 15px 0;
+    }
+
+    .habilidades-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px white ;
+    }
+
+    /*PROJETOS?*/
+
+    h1{
+        text-align: center;
+        margin: 20px auto;
+        color: white;
+      }
+    
+      a{
+        text-decoration: none;
+        color: #8b949e;
+      }
+
+     
+    .button-repo {
+    color: white;
+    border: 1px solid #47A6F0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    .button-repo:hover {
+    background-color: black;
+    }
+
+      
+      .content-main{
+        margin: 30px;
+      }
+    
+      .content-main .project{
+        border: 1px solid #30363d;
+        display:flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+        border-radius: 6px;
+        margin:20px;
+      }
+      
+      .content-main .project div{
+        display: flex;
+        justify-content: space-between;
+    
+      }
+    
+      .content-main .project div .date-create {
+        color: #8b949e;
+        border: 1px solid #8b949e;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    
+      }
+    
+      .content-main .project div .titulo{
+        color: white ;
+      }
+
+     .language{
+        color: #47A6F0;
+     }
+
+     /*rodapé*/
+
+     footer{
+        padding: 80px 4%;
+        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.098);
+       
+     }
+
+     footer .logo-footer{
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 589px;
+        
+     }
+
+     footer .line-footer p{
+        color: white;
+        text-align: center;
+        
+     }
+
+     footer .sociais-footer{
+        margin-left: 550px;
+        padding: 40px;
+        font-size: 30px;
+     }
+
+     .project:hover{
+        transform: scale(1.02);
+        box-shadow: 0 0 8px white ;
+     }
+
+     /*animações*/
+     #habilidades, #projetos, #nome{
+        visibility:hidden;
+     }
+
+
+     
+ /* resposividade */
+
+    @media (max-width: 1000px) {
+        body {
+            font-size: 14px; 
+        }
+
+        #ola {
+            position: static; 
+            text-align: center; 
+            padding: 30px; 
+            margin-top: 50px; 
+        }
+
+        .flex {
+            flex-direction: column; 
+            gap: 30px; 
+        }
+
+        .habilidades-box {
+            padding: 30px; 
+            margin-left: 0; 
+        }
+
+        footer .logo-footer {
+            margin-left: 0; 
+        }
+    }
